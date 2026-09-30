@@ -477,40 +477,8 @@
     </div>
   </section>
 
-  <!-- SLIDE 4: CLASS STRUCTURE -->
+  <!-- SLIDE 4: CLASS DIAGRAM -->
   <section class="slide" data-index="3">
-    <div class="slide-kicker">โครงสร้างระบบ</div>
-    <h2 class="slide-title">คลาสทั้งหมดในระบบ (9 คลาส)</h2>
-    <div class="content-body class-map">
-      <div class="class-row">
-        <span class="class-chip">BudgetAccount</span>
-        <span class="class-desc">จัดการงบประมาณและยอดเงินคงเหลือ — <b>Encapsulation</b></span>
-      </div>
-      <div class="class-row">
-        <span class="class-chip">Expense</span>
-        <span class="class-desc">คลาสแม่ของรายจ่าย เก็บจำนวนเงิน โน้ต วันที่ — <b>Inheritance base</b></span>
-      </div>
-      <div class="class-row">
-        <span class="class-chip sub">↳ EssentialExpense / RewardExpense / ImpulseExpense</span>
-        <span class="class-desc">คลาสลูกที่ extends Expense แต่ override พฤติกรรมของตัวเอง — <b>Inheritance + Polymorphism</b></span>
-      </div>
-      <div class="class-row">
-        <span class="class-chip">FinancialAnalyzer</span>
-        <span class="class-desc">คำนวณสรุปผล วิเคราะห์สัดส่วน และข้อความเตือน</span>
-      </div>
-      <div class="class-row">
-        <span class="class-chip">UIManager</span>
-        <span class="class-desc">เชื่อมต่อ DOM กับ Logic ทั้งหมด จัดการ Event และ Render หน้าจอ</span>
-      </div>
-      <div class="class-row">
-        <span class="class-chip">Transaction / Wishlist</span>
-        <span class="class-desc">คลาสสนับสนุนสำหรับธุรกรรมและรายการของที่อยากได้ (Deferred purchase)</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 5: CLASS DIAGRAM -->
-  <section class="slide" data-index="4">
     <div class="slide-kicker">โครงสร้างระบบ</div>
     <h2 class="slide-title">Class Diagram</h2>
     <div class="content-body">
@@ -537,6 +505,38 @@
             <p><code>EssentialExpense</code>, <code>RewardExpense</code>, <code>ImpulseExpense</code> สืบทอดจาก <code>Expense</code> และ override <code>getCategoryBadge()</code></p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: CLASS STRUCTURE -->
+  <section class="slide" data-index="4">
+    <div class="slide-kicker">โครงสร้างระบบ</div>
+    <h2 class="slide-title">คลาสทั้งหมดในระบบ (9 คลาส)</h2>
+    <div class="content-body class-map">
+      <div class="class-row">
+        <span class="class-chip">BudgetAccount</span>
+        <span class="class-desc">จัดการงบประมาณและยอดเงินคงเหลือ — <b>Encapsulation</b></span>
+      </div>
+      <div class="class-row">
+        <span class="class-chip">Expense</span>
+        <span class="class-desc">คลาสแม่ของรายจ่าย เก็บจำนวนเงิน โน้ต วันที่ — <b>Inheritance base</b></span>
+      </div>
+      <div class="class-row">
+        <span class="class-chip sub">↳ EssentialExpense / RewardExpense / ImpulseExpense</span>
+        <span class="class-desc">คลาสลูกที่ extends Expense แต่ override พฤติกรรมของตัวเอง — <b>Inheritance + Polymorphism</b></span>
+      </div>
+      <div class="class-row">
+        <span class="class-chip">FinancialAnalyzer</span>
+        <span class="class-desc">คำนวณสรุปผล วิเคราะห์สัดส่วน และข้อความเตือน</span>
+      </div>
+      <div class="class-row">
+        <span class="class-chip">UIManager</span>
+        <span class="class-desc">เชื่อมต่อ DOM กับ Logic ทั้งหมด จัดการ Event และ Render หน้าจอ</span>
+      </div>
+      <div class="class-row">
+        <span class="class-chip">Transaction / Wishlist</span>
+        <span class="class-desc">คลาสสนับสนุนสำหรับธุรกรรมและรายการของที่อยากได้ (Deferred purchase)</span>
       </div>
     </div>
   </section>
